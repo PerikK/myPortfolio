@@ -10,8 +10,8 @@ import Projects from './components/Projects.jsx'
 function App() {
 
   return (
-      <div className='bg-yellow-600 text-black text-5xl font-extrabold p-5 border-8 border-black border-dashed rounded-3xl ' >
-              <Navbar />
+      <div>
+      <Navbar />
       <Home />
       <About />
       <Skills />
