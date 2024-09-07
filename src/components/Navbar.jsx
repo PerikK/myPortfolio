@@ -22,7 +22,7 @@ export default function Navbar() {
     return (
         <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       <div>
-        <h1 className=' font-thin text-2xl italic font-serif'>TB</h1>
+        <h1 className=' font-thin text-2xl italic font-serif'>PK</h1>
       </div>
       {/* menu */}
       <ul className='hidden md:flex gap-x-8'>
@@ -43,7 +43,7 @@ export default function Navbar() {
         </li>
         <li>
           <Link to='work' smooth={true} duration={500}>
-            Work
+            Projects
           </Link>
         </li>
         <li>
@@ -83,8 +83,8 @@ export default function Navbar() {
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
-            Work
+          <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li className='py-6 text-4xl'>
