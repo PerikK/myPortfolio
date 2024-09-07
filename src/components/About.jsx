@@ -23,9 +23,8 @@ export default function About() {
               </p>
             </div>
             <div>
-              <p>
-                
-                Text
+              <p>                
+               I'm Periklis, a Full Stack Developer who recently completed an intensive 6-month, 900+ hour course at Boolean UK. I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies.
               </p>
             </div>
           </div>
