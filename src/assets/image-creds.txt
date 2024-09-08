@@ -11,3 +11,5 @@ Photo by <a href="https://unsplash.com/@casparrubin?utm_content=creditCopyText&u
 - Undertook Scrum Master role using Kanban and agile methodologies.
 
 Red-green color vision deficiency
+
+<a target="_blank" href="https://icons8.com/icon/54087/nodejs">Nodejs</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

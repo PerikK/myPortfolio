@@ -1,8 +1,6 @@
-import { HiArrowNarrowRight } from 'react-icons/hi';
-import me from '../assets/me.jpg';
-import { Link } from "react-scroll";
-
-
+import { HiArrowNarrowRight } from 'react-icons/hi'
+import me from '../assets/me.jpg'
+import { Link } from "react-scroll"
 
 
 export default function Home() {
@@ -20,7 +18,11 @@ export default function Home() {
                         I am Periklis. A Full Stack Developer.
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md text-xl">
-                        I just finished an intensivw 6-month <br /> ( {'>'} 900 hours ) course at <a href="https://boolean.co.uk">Boolean UK</a>.
+                        I just finished an intensivw 6-month <br />
+                        <section className='font-sans'>
+                            ( {'>'} 900 hours )
+                        course at <a href="https://boolean.co.uk">Boolean UK</a>.
+                        </section>
                     </p>
                     <p className='text-2xl'>In this period, I learned how to use a plethora of development technologies in order to:  </p>
                     <ul className='text-xl'>
