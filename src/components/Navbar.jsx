@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to='work' smooth={true} duration={500}>
+          <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
@@ -83,7 +83,7 @@ export default function Navbar() {
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to='projects' smooth={true} duration={500}>
+          <Link onClick={handleClick} to='Projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>

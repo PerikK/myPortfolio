@@ -13,6 +13,7 @@ import {
 	PyLogo,
 	PhpLogo,
 	AngularLogo,
+	MongoDbLogo
 } from '../assets/icons/Logos.jsx'
 
 export default function Skills() {
@@ -32,6 +33,7 @@ export default function Skills() {
 		Python: PyLogo,
 		PHP: PhpLogo,
 		Angular: AngularLogo,
+		MongoDB: MongoDbLogo
     }
     
 	const skillsList = [
@@ -108,7 +110,7 @@ export default function Skills() {
 		>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className=' w-full flex justify-center items-center flex-col mb-7'>
-					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>
+					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center sm: mt-96 '>
 						Skills
 					</p>
 					<p className='py-4 text-2xl'>
