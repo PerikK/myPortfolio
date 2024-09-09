@@ -54,6 +54,7 @@ export default function Skills() {
 		'NextJS',
 		'Angular',
 		'PHP',
+		'MongoDB'
     ]
     
     const PlaceholderLogo = () => (
