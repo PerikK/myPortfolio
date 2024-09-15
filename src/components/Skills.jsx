@@ -126,8 +126,8 @@ export default function Skills() {
 						Future Skills
 					</p>
 					<p className='py-4 text-2xl'>
-						And here is a list with skills I plan to learn in the next
-						months
+						And here is a list of skills I plan to learn in the next
+						months.
 					</p>
 				</div>
 				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
