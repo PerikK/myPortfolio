@@ -18,13 +18,16 @@ export default function About() {
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold">
               <p>
-                Hi. I'm Periklis Kafchitsas, nice to meet you. Fell free to take a 
+                Hi. I'm Periklis Kafchitsas. Nice to meet you. Fell free to take a 
                 look around and see if we could work together.
               </p>
             </div>
             <div>
               <p>                
-                I'm Periklis. A Full Stack Developer who recently completed an intensive 6-month, 900+ hours course at Boolean UK. I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies.
+                I'm Periklis. A Full Stack Developer who recently completed an intensive 6-month, <section className='font-sans'>
+                            ( {'>'} 900 hours )
+                        course at <a href="https://boolean.co.uk">Boolean UK</a>.
+                        </section> I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies. I love creating usefull applications and especially enjoy creating Back-ends and APIs.
               </p>
             </div>
           </div>
