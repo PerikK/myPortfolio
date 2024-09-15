@@ -15,7 +15,7 @@ export default function Home() {
                         Welcome to my Portfolio!
                     </h1> <br />
                     <h2 className="text-2xl sm:text-5xl font-bold text-white">
-                        I am Periklis. A Full Stack Developer.
+                        I am Periklis. <br/> A Full Stack Software Developer.
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md text-xl">
                         I just finished an intensivw 6-month <br />
