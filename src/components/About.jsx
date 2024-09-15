@@ -24,7 +24,7 @@ export default function About() {
             </div>
             <div>
               <p>                
-               I'm Periklis. A Full Stack Developer who recently completed an intensive 6-month, 900+ hours course at Boolean UK. I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies. I prefer working in the back-end, because Deuteranopia makes it kind of difficult to work with UI colors in the front-end
+                I'm Periklis. A Full Stack Developer who recently completed an intensive 6-month, 900+ hours course at Boolean UK. I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies.
               </p>
             </div>
           </div>
