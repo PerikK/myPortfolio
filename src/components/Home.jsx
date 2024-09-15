@@ -18,7 +18,7 @@ export default function Home() {
                         I am Periklis. <br/> A Full Stack Software Developer.
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md text-xl">
-                        I just finished an intensivw 6-month <br />
+                        I just finished an intensive 6-month <br />
                         <section className='font-sans'>
                             ( {'>'} 900 hours )
                         course at <a href="https://boolean.co.uk">Boolean UK</a>.
