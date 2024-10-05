@@ -20,9 +20,63 @@ export default function Projects() {
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
                             <span className=' text-lg font-bold text-white tracking-wider'>
+                                Cohort Manager Fron-End
+                            </span>
+                            <p className='text-center text-sm pt-2'>The front-end of a school management app, that allows students and teachers to communicate, grade and arrange classes. Built with React in an Agile setting</p>
+                            <div className='pt-8 text-center'>
+                                <a href='/'>
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        Demo
+                                    </button>
+                                </a>
+                                <a
+                                    href='https://github.com/boolean-uk/team-dev-client-c12'
+                                    target='_blank'
+                                >
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        Code
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style={{ backgroundImage: `url(${code})` }}
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+                    >
+                        {/* Hover Effects */}
+                        <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+                            <span className=' text-lg font-bold text-white tracking-wider'>
+                                Cohort manager back-end.
+                            </span>
+                            <p className='text-center text-sm pt-2'>The back-end of a school management app. It allows for authentication account creation and management. Built with Express, Postgress, and Prisma in an Agile setting</p>
+                            <div className='pt-8 text-center'>
+                                <a href='/'>
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        Demo
+                                    </button>
+                                </a>
+                                <a
+                                    href='https://github.com/boolean-uk/team-dev-server-c12'
+                                    target='_blank'
+                                >
+                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+                                        Code
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style={{ backgroundImage: `url(${code})` }}
+                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+                    >
+                        {/* Hover Effects */}
+                        <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+                            <span className=' text-lg font-bold text-white tracking-wider'>
                                 My App
                             </span>
-                            <p className='text-center'>A web application built with React</p>
+                            <p className='text-center text-sm pt-2'>A web application built with React</p>
                             <div className='pt-8 text-center'>
                                 <a href='/'>
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
@@ -46,7 +100,7 @@ export default function Projects() {
                             <span className=' text-lg font-bold text-white tracking-wider'>
                                 My App
                             </span>
-                            <p className='text-center'>A web application built with React</p>
+                            <p className='text-center text-sm pt-2'>A web application built with React</p>
                             <div className='pt-8 text-center'>
                                 <a href='/'>
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
@@ -70,7 +124,7 @@ export default function Projects() {
                             <span className=' text-lg font-bold text-white tracking-wider'>
                                 My App
                             </span>
-                            <p className='text-center'>A web application built with React</p>
+                            <p className='text-center text-sm pt-2'>A web application built with React</p>
                             <div className='pt-8 text-center'>
                                 <a href='/'>
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
@@ -94,55 +148,7 @@ export default function Projects() {
                             <span className=' text-lg font-bold text-white tracking-wider'>
                                 My App
                             </span>
-                            <p className='text-center'>A web application built with React</p>
-                            <div className='pt-8 text-center'>
-                                <a href='/'>
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='/'>
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        style={{ backgroundImage: `url(${code})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
-                        {/* Hover Effects */}
-                        <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-                            <span className=' text-lg font-bold text-white tracking-wider'>
-                                My App
-                            </span>
-                            <p className='text-center'>A web application built with React</p>
-                            <div className='pt-8 text-center'>
-                                <a href='/'>
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Demo
-                                    </button>
-                                </a>
-                                <a href='/'>
-                                    <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-                                        Code
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        style={{ backgroundImage: `url(${code})` }}
-                        className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    >
-                        {/* Hover Effects */}
-                        <div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-                            <span className=' text-lg font-bold text-white tracking-wider'>
-                                My App
-                            </span>
-                            <p className='text-center'>A web application built with React</p>
+                            <p className='text-center text-sm pt-2'>A web application built with React</p>
                             <div className='pt-8 text-center'>
                                 <a href='/'>
                                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
