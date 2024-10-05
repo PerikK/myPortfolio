@@ -1,7 +1,7 @@
 import {
 	HtmlLogo,
-    JsLogo,
-    ReactLogo,
+	JsLogo,
+	ReactLogo,
 	CssLogo,
 	NodeLogo,
 	ExpressLogo,
@@ -13,12 +13,11 @@ import {
 	PyLogo,
 	PhpLogo,
 	AngularLogo,
-	MongoDbLogo
+	MongoDbLogo,
 } from '../assets/icons/Logos.jsx'
 
 export default function Skills() {
-
-    const skillLogos = {
+	const skillLogos = {
 		HTML: HtmlLogo,
 		CSS: CssLogo,
 		JavaScript: JsLogo,
@@ -33,9 +32,9 @@ export default function Skills() {
 		Python: PyLogo,
 		PHP: PhpLogo,
 		Angular: AngularLogo,
-		MongoDB: MongoDbLogo
-    }
-    
+		MongoDB: MongoDbLogo,
+	}
+
 	const skillsList = [
 		'HTML',
 		'CSS',
@@ -56,27 +55,31 @@ export default function Skills() {
 		'NextJS',
 		'Angular',
 		'PHP',
-		'MongoDB'
-    ]
-    
-    const PlaceholderLogo = () => (
-	<div style={{ width: '48px', height: '48px', backgroundColor: '#0a192f' }} />
-);
+		'MongoDB',
+	]
 
+	const PlaceholderLogo = () => (
+		<div
+			style={{
+				width: '48px',
+				height: '48px',
+				backgroundColor: '#0a192f',
+			}}
+		/>
+	)
 
-    
-    const renderSkills = (list) => {
+	const renderSkills = (list) => {
 		return list.map((skill, i) => {
-			const LogoComponent = skillLogos[skill] || PlaceholderLogo;
-			
+			const LogoComponent = skillLogos[skill] || PlaceholderLogo
+
 			return (
 				<div
 					key={i}
 					className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'
 				>
 					<p className='my-4'>
-                        {/* {LogoComponent && <LogoComponent />} {skill} */}
-                        <LogoComponent /> 
+						{/* {LogoComponent && <LogoComponent />} {skill} */}
+						<LogoComponent />
 						{skill}
 					</p>
 				</div>
@@ -86,16 +89,16 @@ export default function Skills() {
 
 	const renderFutureSkills = (list) => {
 		return list.map((skill, i) => {
-			const LogoComponent = skillLogos[skill] || PlaceholderLogo;
-			
+			const LogoComponent = skillLogos[skill] || PlaceholderLogo
+
 			return (
 				<div
 					key={i}
 					className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'
 				>
 					<p className='my-4'>
-                        {/* {LogoComponent && <LogoComponent />} {skill} */}
-                        <LogoComponent /> 
+						{/* {LogoComponent && <LogoComponent />} {skill} */}
+						<LogoComponent />
 						{skill}
 					</p>
 				</div>
@@ -106,11 +109,11 @@ export default function Skills() {
 	return (
 		<div
 			name='skills'
-			className='w-full h-screen bg-[#0a192f] text-gray-300'
+			className=' flex w-full h-screen bg-[#0a192f] text-gray-300'
 		>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className=' w-full flex justify-center items-center flex-col mb-7'>
-					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center sm: mt-96 pt-64 '>
+					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center sm: mt-6 pt-4 '>
 						Skills
 					</p>
 					<p className='py-4 text-2xl'>
@@ -121,20 +124,27 @@ export default function Skills() {
 				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
 					{renderSkills(skillsList)}
 				</div>
-				<div className=' w-full flex justify-center items-center flex-col mb-7'>
-					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>
-						Future Skills
-					</p>
-					<p className='py-4 text-2xl'>
-						And here is a list of skills I plan to learn in the next
-						months.
+				<div className=' w-full  justify-center items-center  mb-7'>
+					<div className=' w-full flex justify-center items-center flex-col mb-7'>
+						<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>
+							Future Skills
+						</p>
+						<p className='py-4 text-2xl'>
+							And here is a list of skills I plan to aquire in the
+							next months.
+						</p>
+						<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-2'>
+							{renderFutureSkills(futuresSkills)}
+						</div>
+					</div>
+					<p className='pt-2'>
+						*All logos by{' '}
+						<a target='_blank' href='https://icons8.com'>
+							Icons8
+						</a>{' '}
 					</p>
 				</div>
-				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-					{renderFutureSkills(futuresSkills)}
-				</div>
-            <p>*All logos by <a target="_blank" href="https://icons8.com">Icons8</a> </p>
-            </div>
+			</div>
 		</div>
 	)
 }
