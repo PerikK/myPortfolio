@@ -1,6 +1,9 @@
 import code from '../assets/code2.jpg'
+import ProjectModal from './ProjectModal'
 
 export default function Projects() {
+	const [isOpen, setIsOpen] = useState(false)
+
 	return (
 		<div
 			name='projects'
@@ -65,9 +68,9 @@ export default function Projects() {
 								setting
 							</p>
 							<div className='pt-8 text-center'>
-								<a href='/'>
+								<a href=''>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
+										<ProjectModal />
 									</button>
 								</a>
 								<a
@@ -88,18 +91,21 @@ export default function Projects() {
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
 							<span className=' text-lg font-bold text-white tracking-wider'>
-								My App
+								Shopping-List
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A web application built with React
+								A nice Shopping List built with React and Tailwindcss
 							</p>
 							<div className='pt-8 text-center'>
-								<a href='/'>
+								<a
+									href='https://btr-shopping-list.netlify.app'
+									target='_blank'
+								>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Demo
 									</button>
 								</a>
-								<a href='/'>
+								<a href='https://github.com/PerikK/shopping_list.git'>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Code
 									</button>

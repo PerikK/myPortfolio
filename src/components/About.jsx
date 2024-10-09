@@ -27,7 +27,7 @@ export default function About() {
                 I'm Periklis. A Full Stack Developer who recently completed an intensive 6-month, <section className='font-sans'>
                             ( {'>'} 900 hours )
                         course at <a href="https://boolean.co.uk">Boolean UK</a>.
-                        </section> I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, and managing team simulations, documentation, and agile methodologies. I love creating usefull applications and especially enjoy creating Back-ends and APIs.
+                        </section> I gained hands-on experience in front-end and back-end technologies, building full-stack projects, working with RESTful APIs, React, PostgreSQL, managing team simulations, documentation, and agile methodologies. I love creating usefull applications and especially enjoy creating Back-ends and APIs.
               </p>
             </div>
           </div>
