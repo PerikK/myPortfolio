@@ -7,6 +7,7 @@ import fe1 from '../assets/project_images/cm_fe/fe1.png'
 import fe2 from '../assets/project_images/cm_fe/fe2.png'
 import fe3 from '../assets/project_images/cm_fe/fe3.png'
 import fe4 from '../assets/project_images/cm_fe/fe4.png'
+import sl1 from '../assets/project_images/shoping-list/sl1.png'
 
 export default function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -36,7 +37,7 @@ export default function Projects() {
 				</div>
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${fe3})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -68,7 +69,7 @@ export default function Projects() {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${be2})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -101,7 +102,7 @@ export default function Projects() {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${sl1})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -110,7 +111,9 @@ export default function Projects() {
 								Shopping-List
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A nice Shopping List built with React and Tailwindcss. Optimized for mobile-phones where it is most likely to be used.
+								A nice Shopping List optimized for mobile-phones where
+								it is most likely to be used. Built with React and
+								Tailwindcss.
 							</p>
 							<div className='pt-8 text-center'>
 								<a
