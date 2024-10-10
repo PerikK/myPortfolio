@@ -1,18 +1,21 @@
+
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
 export default function Contact() {
 	const form = useRef()
 
+
 	const sendEmail = (e) => {
-		e.preventDefault()
+        e.preventDefault()
+        console.log(form.current)        
 
 		emailjs
 			.sendForm(
-				'service_fyli78p',
-				'template_nzuax0n',
-				form.current,
-				'qPpSlC0DjSF7MBKgB'
+				process.env.REACT_APP_EMAILJS_SERVICE_ID,
+				process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                form.current,                
+				process.env.REACT_APP_EMAILJS_USER_ID
 			)
 			.then(
 				(result) => {
@@ -43,21 +46,21 @@ export default function Contact() {
 					<p className='text-gray-300 py-4'>Send me a message</p>
 				</div>
 				<input
-					className='bg-[#ccd6f6] p-2'
+					className='bg-[#ccd6f6] text-black font-semibold  p-2'
 					type='text'
 					placeholder='Name'
 					name='user_name'
 					required
 				/>
 				<input
-					className='my-4 p-2 bg-[#ccd6f6]'
+					className='my-4 p-2 bg-[#ccd6f6] text-black font-semibo'
 					type='email'
 					placeholder='Email'
 					name='user_email'
 					required
 				/>
 				<textarea
-					className='bg-[#ccd6f6] p-2'
+					className='bg-[#ccd6f6] text-black font-semibo p-2'
 					name='message'
 					rows='10'
 					placeholder='Message'
