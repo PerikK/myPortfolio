@@ -110,7 +110,7 @@ export default function Projects() {
 								Shopping-List
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A nice Shopping List built with React and Tailwindcss
+								A nice Shopping List built with React and Tailwindcss. Optimized for mobile-phones where it is most likely to be used.
 							</p>
 							<div className='pt-8 text-center'>
 								<a

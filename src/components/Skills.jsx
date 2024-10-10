@@ -14,6 +14,7 @@ import {
 	PhpLogo,
 	AngularLogo,
 	MongoDbLogo,
+	DockerLogo,
 } from '../assets/icons/Logos.jsx'
 
 export default function Skills() {
@@ -33,6 +34,7 @@ export default function Skills() {
 		PHP: PhpLogo,
 		Angular: AngularLogo,
 		MongoDB: MongoDbLogo,
+		Docker: DockerLogo,
 	}
 
 	const skillsList = [
@@ -45,8 +47,7 @@ export default function Skills() {
 		'PostgreSQL',
 		'Prisma ORM',
 		'Git & GitHub',
-		'TDD',
-		'OOP',
+		'Docker',
 		'Agile',
 	]
 
