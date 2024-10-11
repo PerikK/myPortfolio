@@ -139,10 +139,12 @@ export default function Projects() {
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
 							<span className=' text-lg font-bold text-white tracking-wider'>
-								My App
+								Coming Soon (My Movies DB)
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A web application built with React
+								A full stack app (Express - React - PostgreSQL) to
+								rate and comment on movies and create your own
+								collection
 							</p>
 							<div className='pt-8 text-center'>
 								<a href='/'>
@@ -165,10 +167,10 @@ export default function Projects() {
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
 							<span className=' text-lg font-bold text-white tracking-wider'>
-								My App
+								Coming Soon (A basket for an online shop)
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A web application built with React
+								A full blown, real world, online market, basket
 							</p>
 							<div className='pt-8 text-center'>
 								<a href='/'>
@@ -191,10 +193,12 @@ export default function Projects() {
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
 							<span className=' text-lg font-bold text-white tracking-wider'>
-								My App
+								Coming Soon (An Artist's Portfolio)
 							</span>
 							<p className='text-center text-sm pt-2'>
-								A web application built with React
+								A real world full stack app (Express - React -
+								PostgreSQL) where a painter will showcase and sell
+								their art.
 							</p>
 							<div className='pt-8 text-center'>
 								<a href='/'>
