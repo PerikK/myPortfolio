@@ -119,7 +119,7 @@ export default function Skills() {
 					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center'>
 						Skills
 					</p>
-					<p className='py-4 text-xl sm:text-2xl text-center'>
+					<p className='py-1 text-xl sm:text-2xl text-center'>
 						I enjoy diving into and learning new things. This is a
 						list of technologies I have worked with
 					</p>
