@@ -27,7 +27,7 @@ export default function About() {
 							</div>
 							<div className='text-base sm:text-lg'>
                 <p>
-                  I 've been working for 20 years as an IT support technician and administrator. 
+                  I 've been working for 20 years as an IT/Network administrator and support technician. 
                   In this period, I have worked for various companies as well as a freelancer.
                   Last year I decided to re-skill and become a Full Stack Developer. <br/>
                   I recently completed an
