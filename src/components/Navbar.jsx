@@ -18,14 +18,14 @@ export default function Navbar() {
 
 
     return (
-			<div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+			<div className='fixed w-full h-[60px] md:h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
 				<div>
-					<h1 className=' font-thin text-2xl italic font-serif'>
+					<h1 className=' font-thin text-xl md:text-2xl italic font-serif'>
 						PK
 					</h1>
 				</div>
 				{/* menu */}
-				<ul className='hidden md:flex gap-x-8'>
+				<ul className='hidden md:flex gap-x-4 md:gap-x-8'>
 					<li>
 						<Link to='home' smooth={true} duration={500}>
 							Home
@@ -54,7 +54,7 @@ export default function Navbar() {
 				</ul>
 				{/* Hamburger */}
 				<div onClick={handleClick} className='md:hidden z-10'>
-					{!nav ? <FaBars /> : <FaTimes />}
+					{!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
 				</div>
 				{/* Mobile menu */}
 				<ul
@@ -64,7 +64,7 @@ export default function Navbar() {
 							: 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
 					}
 				>
-					<li className='py-6 text-4xl'>
+					<li className='py-4 text-3xl md-text-4xl'>
 						<Link
 							onClick={handleClick}
 							to='home'
@@ -74,7 +74,7 @@ export default function Navbar() {
 							Home
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-4 text-3xl md-text-4xl'>
 						{' '}
 						<Link
 							onClick={handleClick}
@@ -85,7 +85,7 @@ export default function Navbar() {
 							About
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-4 text-3xl md-text-4xl'>
 						{' '}
 						<Link
 							onClick={handleClick}
@@ -96,7 +96,7 @@ export default function Navbar() {
 							Skills
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-4 text-3xl md-text-4xl'>
 						{' '}
 						<Link
 							onClick={handleClick}
@@ -107,7 +107,7 @@ export default function Navbar() {
 							Projects
 						</Link>
 					</li>
-					<li className='py-6 text-4xl'>
+					<li className='py-4 text-3xl md-text-4xl'>
 						{' '}
 						<Link
 							onClick={handleClick}
