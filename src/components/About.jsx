@@ -20,7 +20,7 @@ export default function About() {
 						<div className='grid sm:grid-cols-2 gap-8'>
 							<div className='text-2xl sm:text-3xl font-bold'>
 								<p>
-									Hi, I’m Periklis Kafchitsas, nice to have you visit my portfolio . Feel
+									Hi, I’m Periklis Kafchitsas. Nice to have you visit my portfolio . Feel
 									free to take a look around and see if we could work
 									together.
 								</p>
