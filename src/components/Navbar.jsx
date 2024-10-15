@@ -15,8 +15,52 @@ export default function Navbar() {
 					PK
 				</h1>
 			</div>
+			{/* Social icons for smaller screens */}
+			<div className='flex xl:hidden'>
+				{[
+					{
+						icon: FaLinkedin,
+						href: 'https://www.linkedin.com/in/periklis-kafchitsas-482467234/',
+						target: '_blank',
+					},
+					{
+						icon: FaGithub,
+						href: 'https://github.com/PerikK',
+						target: '_blank',
+					},
+					{
+						icon: BsFillPersonLinesFill,
+						href: 'https://app.enhancv.com/share/00cfdb46/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic',
+						target: '_blank',
+					},
+					{ icon: HiOutlineMail, href: 'contact', target: '_blank' },
+				].map((item, index) =>
+					item.href === 'contact' ? (
+						<Link
+							key={index}
+							to={item.href}
+							smooth={true}
+							duration={500}
+							className='px-2 hover:text-white transition-colors cursor-pointer'
+						>
+							<item.icon size={20} />
+						</Link>
+					) : (
+						<a
+							key={index}
+							className='px-2 hover:text-white transition-colors'
+							href={item.href}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<item.icon size={20} />
+						</a>
+					)
+				)}
+			</div>
+
 			{/* menu */}
-			<ul className='hidden md:flex gap-x-4 md:gap-x-8'>
+			<ul className='hidden lg:flex gap-x-4 md:gap-x-8'>
 				<li>
 					<Link to='home' smooth={true} duration={500}>
 						Home
@@ -44,7 +88,7 @@ export default function Navbar() {
 				</li>
 			</ul>
 			{/* Hamburger */}
-			<div onClick={handleClick} className='md:hidden z-10'>
+			<div onClick={handleClick} className='lg:hidden z-10'>
 				{!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
 			</div>
 			{/* Mobile menu */}
