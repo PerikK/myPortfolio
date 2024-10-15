@@ -11,9 +11,12 @@ export default function Navbar() {
 	return (
 		<div className='fixed w-full h-[60px] md:h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
 			<div>
-				<h1 className=' font-thin text-xl md:text-2xl italic font-serif'>
+				<Link to='home' smooth={true} duration={500}>
+						
+				<h1 className='hover:cursor-pointer font-thin text-xl md:text-3xl italic font-serif'>
 					PK
 				</h1>
+					</Link>
 			</div>
 			{/* Social icons for smaller screens */}
 			<div className='flex xl:hidden'>
