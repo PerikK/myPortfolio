@@ -26,8 +26,10 @@ export default function About() {
 								</p>
 							</div>
 							<div className='text-base sm:text-lg'>
-								<p>
-									I'm a Full Stack Developer who recently completed an
+                <p>
+                  I 've been working for 20 years as an IT support technician and administrator. 
+                  Last year I decided to re-skill and become a Full Stack Developer. <br/>
+                  I recently completed an
 									intensive 6-month,
 									<span className='font-sans'>
 										{' '}
