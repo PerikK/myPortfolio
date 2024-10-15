@@ -20,7 +20,7 @@ export default function About() {
 						<div className='grid sm:grid-cols-2 gap-8'>
 							<div className='text-2xl sm:text-3xl font-bold'>
 								<p>
-									Hi. I'm Periklis Kafchitsas. Nice to meet you. Feel
+									Hi, I’m Periklis Kafchitsas, nice to have you visit my portfolio . Feel
 									free to take a look around and see if we could work
 									together.
 								</p>
@@ -28,7 +28,7 @@ export default function About() {
 							<div className='text-base sm:text-lg'>
                 <p>
                   I 've been working for 20 years as an IT support technician and administrator. 
-                  In this period, I have worked for varius companies as well as a freelancer.
+                  In this period, I have worked for various companies as well as a freelancer.
                   Last year I decided to re-skill and become a Full Stack Developer. <br/>
                   I recently completed an
 									intensive 6-month,

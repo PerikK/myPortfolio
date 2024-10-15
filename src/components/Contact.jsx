@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi'
+import {  HiArrowNarrowLeft } from 'react-icons/hi'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
