@@ -15,6 +15,9 @@ import {
 	AngularLogo,
 	MongoDbLogo,
 	DockerLogo,
+	PythonLogo,
+	JavaLogo,
+	AgileDevelopmentLogo,
 } from '../assets/icons/Logos.jsx'
 import { Link } from 'react-scroll'
 import { HiArrowNarrowRight } from 'react-icons/hi'
@@ -32,11 +35,13 @@ export default function Skills() {
 		'Git & GitHub': GitLogo,
 		TypeScript: TsLogo,
 		NextJS: NextLogo,
-		Python: PyLogo,
 		PHP: PhpLogo,
 		Angular: AngularLogo,
 		MongoDB: MongoDbLogo,
 		Docker: DockerLogo,
+		Python: PythonLogo,
+		Java: JavaLogo,
+		Agile: AgileDevelopmentLogo,
 	}
 
 	const skillsList = [
@@ -59,6 +64,9 @@ export default function Skills() {
 		'Angular',
 		'PHP',
 		'MongoDB',
+		'Python',
+		'Java',
+		'Agile',
 	]
 
 	const PlaceholderLogo = () => (
@@ -151,19 +159,19 @@ export default function Skills() {
 							Icons8
 						</a>
 					</p>
-				<div>
-					<Link
-						to='projects'
-						smooth
-						duration={500}
-						className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
-					>
-						Projects
-						<span className='group-hover:rotate-90 duration-300'>
-							<HiArrowNarrowRight size={25} className='ml-3' />
-						</span>
-					</Link>
-				</div>
+					<div>
+						<Link
+							to='projects'
+							smooth
+							duration={500}
+							className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
+						>
+							Projects
+							<span className='group-hover:rotate-90 duration-300'>
+								<HiArrowNarrowRight size={25} className='ml-3' />
+							</span>
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>
