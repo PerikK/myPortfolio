@@ -65,8 +65,7 @@ export default function Skills() {
 		'PHP',
 		'MongoDB',
 		'Python',
-		'Java',
-		'Agile',
+		'Java'
 	]
 
 	const PlaceholderLogo = () => (
