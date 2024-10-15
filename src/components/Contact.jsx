@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
@@ -79,10 +79,10 @@ export default function Contact() {
 					duration={500}
 					className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
 				>
-					Back to top
 					<span className='group-hover:rotate-90 duration-300'>
-						<HiArrowNarrowRight size={25} className='ml-3' />
+						<HiArrowNarrowLeft size={25} className='mr-3' />
 					</span>
+					Back to top
 				</Link>
 			</div>
 			</form>
