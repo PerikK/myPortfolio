@@ -113,9 +113,9 @@ export default function Navbar() {
 			{/* Social icons */}
 			<div className='hidden xl:flex fixed flex-col top-[35%] left-0'>
 				<ul>
-					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+					<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300  bg-blue-300'>
 						<a
-							className='flex justify-between items-center w-full text-gray-300'
+							className='flex justify-between items-center w-full text-gray-800'
 							href='https://www.linkedin.com/in/periklis-kafchitsas-482467234/'
 							target='_blank'
 						>

@@ -151,7 +151,6 @@ export default function Skills() {
 							Icons8
 						</a>
 					</p>
-				</div>
 				<div>
 					<Link
 						to='projects'
@@ -164,6 +163,7 @@ export default function Skills() {
 							<HiArrowNarrowRight size={25} className='ml-3' />
 						</span>
 					</Link>
+				</div>
 				</div>
 			</div>
 		</div>
