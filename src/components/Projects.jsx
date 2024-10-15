@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import code from '../assets/code2.jpg'
 import ProjectModal from './ProjectModal'
+import { Link } from "react-scroll"
+import { HiArrowNarrowRight } from 'react-icons/hi'
 import be1 from '../assets/project_images/cm_be/be1.png'
 import be2 from '../assets/project_images/cm_be/be2.png'
 import fe1 from '../assets/project_images/cm_fe/fe1.png'
@@ -219,6 +221,19 @@ export default function Projects() {
 						onClose={() => setIsModalOpen(false)}
 						images={selectedImages}
 					/>
+				</div>
+								<div>
+					<Link
+						to='contact'
+						smooth
+						duration={500}
+						className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
+					>
+						Conteant Me
+						<span className='group-hover:rotate-90 duration-300'>
+							<HiArrowNarrowRight size={25} className='ml-3' />
+						</span>
+					</Link>
 				</div>
 			</div>
 		</div>

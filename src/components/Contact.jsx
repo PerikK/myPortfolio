@@ -1,20 +1,20 @@
-
+import { Link } from 'react-scroll'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
 
 export default function Contact() {
 	const form = useRef()
 
-
 	const sendEmail = (e) => {
-        e.preventDefault()
-        console.log(form.current)        
+		e.preventDefault()
+		console.log(form.current)
 
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_EMAILJS_SERVICE_ID,
 				process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-                form.current,                
+				form.current,
 				process.env.REACT_APP_EMAILJS_USER_ID
 			)
 			.then(
@@ -72,6 +72,19 @@ export default function Contact() {
 				>
 					Let's Collaborate
 				</button>
+			<div>
+				<Link
+					to='home'
+					smooth
+					duration={500}
+					className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
+				>
+					Back to top
+					<span className='group-hover:rotate-90 duration-300'>
+						<HiArrowNarrowRight size={25} className='ml-3' />
+					</span>
+				</Link>
+			</div>
 			</form>
 		</div>
 	)
