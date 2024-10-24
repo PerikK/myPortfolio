@@ -7,7 +7,9 @@ export default function ProjectModal({ isOpen, onClose, images }) {
 
 	if (isOpen) {
 		document.addEventListener('keydown', handleEscape)
-		console.log(images);
+		document.body.style.overflow = 'hidden' // Prevent background scrolling
+	} else {
+		document.body.style.overflow = 'auto' // Restore background scrolling
 	}
 
 	const handleBackdropClick = (event) => {
@@ -22,7 +24,7 @@ export default function ProjectModal({ isOpen, onClose, images }) {
 			className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center'
 			onClick={handleBackdropClick}
 		>
-			<div className='bg-gray-300 bg-opacity-30 rounded-lg shadow-lg p-4 max-w-9xl h-4/5 m-3'>
+			<div className='bg-gray-300 bg-opacity-30 rounded-lg shadow-lg p-4 max-w-9xl h-4/5 m-3 overflow-y-auto'>
 				<button
 					onClick={onClose}
 					className='absolute top-2 right-2 text-gray-500'
