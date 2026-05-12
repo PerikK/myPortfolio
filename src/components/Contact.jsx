@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import {  HiArrowNarrowLeft } from 'react-icons/hi'
 import { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
 	const form = useRef()
