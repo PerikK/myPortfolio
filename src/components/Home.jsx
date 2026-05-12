@@ -25,7 +25,7 @@ export default function Home() {
                         />
                     </div>
                     <p className="text-gray-500 py-4 max-w-md text-base sm:text-lg">
-                        I just finished an intensive 6-month <br className="hidden sm:inline" />
+                        2 years ago I finished an intensive 6-month <br className="hidden sm:inline" />
                         <span className='font-sans'>
                             ( {'>'} 900 hours ) course at <a href="https://boolean.co.uk" className="text-blue-400 hover:text-blue-300">Boolean UK</a>.
                         </span>
@@ -44,6 +44,26 @@ export default function Home() {
                         <li>Managed documentation for backend usage in .YML format.</li>
                         <li>Undertook Scrum Master role using Kanban and agile methodologies.</li>
                     </ul>
+                    <p className="text-gray-500 py-4 max-w-md text-base sm:text-lg">
+                        For the past 2 years I have been working as a Software Developer <br className="hidden sm:inline" />
+                        {/* <span className='font-sans'>
+                            ( {'>'} 900 hours ) course at <a href="https://boolean.co.uk" className="text-blue-400 hover:text-blue-300">Boolean UK</a>.
+                        </span> */}
+                    </p>
+                    <p className='text-xl mb-2'>In this period,</p>
+                    <ul className='text-sm sm:text-base list-disc list-inside mb-4 space-y-1 text-left'>
+                        <li>I developed 50% of the backend for a startup&#34;s e-commerce app</li>
+                        <li>Build 4 front-end applications for my employer&#34;s projects</li>
+                        {/* <li>Develop Front end applications, creating responsive web pages using React and JavaScript.</li>
+                        <li>Build Back end applications, using RESTful APIs, Express.JS, PostgreSQL, Prisma ORM and Node.js.</li>
+                        <li>Use Git workflow, CLI, and modern development technologies.</li> */}
+                    </ul>
+                    {/* <p className='text-lg font-semibold mb-2'>In Addition I:</p>
+                    <ul className='text-sm sm:text-base list-disc list-inside mb-4 space-y-1 text-left'>
+                        <li>Worked on two team simulations, working on existing codebases.</li>
+                        <li>Managed documentation for backend usage in .YML format.</li>
+                        <li>Undertook Scrum Master role using Kanban and agile methodologies.</li>
+                    </ul> */}
                     <div>
                         <Link
                             to="about"

@@ -10,7 +10,7 @@ import {
   GitLogo,
   TsLogo,
   NextLogo,
-//   PyLogo,
+  //   PyLogo,
   PhpLogo,
   AngularLogo,
   MongoDbLogo,
@@ -18,7 +18,7 @@ import {
   PythonLogo,
   JavaLogo,
   AgileDevelopmentLogo,
-  cSharpLogo,
+  CSharpLogo,
 } from "../assets/icons/Logos.jsx";
 import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -27,7 +27,7 @@ export default function Skills() {
   const skillLogos = {
     HTML: HtmlLogo,
     CSS: CssLogo,
-    "C#": cSharpLogo,
+    "C#": CSharpLogo,
     JavaScript: JsLogo,
     TypeScript: TsLogo,
     React: ReactLogo,

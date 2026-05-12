@@ -70,7 +70,7 @@ export default function Contact() {
 					type='submit'
 					className='text-white bg-gray-700 border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center'
 				>
-					Let's Collaborate
+					Let&#34;s Collaborate
 				</button>
 			<div>
 				<Link

@@ -27,12 +27,12 @@ export default function About() {
 							</div>
 							<div className='text-base sm:text-lg'>
 								<p>
-									I 've been working for 20 years as an IT/Network
+									I &#34; ve been working for 20 years as an IT/Network
 									administrator and support technician. In this
 									period, I have worked for various companies as well
-									as a freelancer. <br /> Last year I decided to make
+									as a freelancer. <br />Couple of years ago I decided to make
 									a turn in my career and become a Full Stack Software
-									Developer. <br />I recently graduated from an
+									Developer. <br />In 2024 I graduated from an
 									intensive <br /> 6-month,
 									<span className='font-sans'>
 										{' '}
