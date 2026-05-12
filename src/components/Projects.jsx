@@ -15,6 +15,7 @@ import rm2 from '../assets/project_images/OAH/Res_map/rm2.png'
 import rm3 from '../assets/project_images/OAH/Res_map/rm3.png'
 import rm4 from '../assets/project_images/OAH/Res_map/rm4.png'
 import rm0 from '../assets/project_images/OAH/Res_map/rm0.png'
+import dr1 from '../assets/project_images/DRE/dr1.png'
 
 export default function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -67,6 +68,46 @@ export default function Projects() {
 								</button>
 								<a
 									href='https://apps.oneaquahealth.eu/resmap/v2'
+									target='_blank'
+								>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Application
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div
+						style={{ backgroundImage: `url(${dr1})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+							<span className=' text-lg font-bold text-white tracking-wider py-2 px-2'>
+								Destination Renewable Energy (DRE)
+							</span>
+							<p className='text-center text-xs pt-2 px-2'>
+								Built the fe for the (DRE) Service 
+								Forecast and assess solar and wind energy potential using realtime and historical data. 
+								Get tailored sims, 2-day forecast, and interactive visualization through a secure digital platform.
+							</p>
+							<div className='pt-8 text-center'>
+								{/* <button
+									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
+									onClick={() => openModal(rmImages)}
+								>
+									Demo
+								</button> */}
+								<a
+									href='https://youtu.be/RxqCjHpBdpA?si=2afXxJLao1QAXiCs '
+									target='_blank'
+								>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Demo
+									</button>
+								</a>
+								<a
+									href='https://hyrefapp.destine.eu'
 									target='_blank'
 								>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
@@ -233,7 +274,7 @@ export default function Projects() {
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
 							<span className=' text-lg font-bold text-white tracking-wider'>
-								Coming Soon (An Artist's Portfolio)
+								Coming Soon (An Artist&#39;s Portfolio)
 							</span>
 							<p className='text-center text-sm pt-2'>
 								A real world full stack app (Express - React -
