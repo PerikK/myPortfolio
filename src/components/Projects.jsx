@@ -10,6 +10,11 @@ import fe2 from '../assets/project_images/cm_fe/fe2.png'
 import fe3 from '../assets/project_images/cm_fe/fe3.png'
 import fe4 from '../assets/project_images/cm_fe/fe4.png'
 import sl1 from '../assets/project_images/shoping-list/sl1.png'
+import rm1 from '../assets/project_images/OAH/Res_map/rm1.png'
+import rm2 from '../assets/project_images/OAH/Res_map/rm2.png'
+import rm3 from '../assets/project_images/OAH/Res_map/rm3.png'
+import rm4 from '../assets/project_images/OAH/Res_map/rm4.png'
+import rm0 from '../assets/project_images/OAH/Res_map/rm0.png'
 
 export default function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -17,6 +22,7 @@ export default function Projects() {
 
 	const beImages = [be1, be2]
 	const feImages = [fe1, fe3, fe2, fe4]
+	const rmImages = [rm0, rm1, rm2, rm3, rm4]
 
 	const openModal = (images) => {
 		setSelectedImages(images)
@@ -38,6 +44,38 @@ export default function Projects() {
 					</p>
 				</div>
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+					<div
+						style={{ backgroundImage: `url(${rm1})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+							<span className=' text-lg font-bold text-white tracking-wider'>
+								OAH - Resilience Map
+							</span>
+							<p className='text-center text-sm pt-2 px-2'>
+								The OneAquaHealth Resilience Map is an interactive tool 
+								that brings together biodiversity, environmental data, pathogens, weather, 
+								and satellite indicators to assess the health of urban water ecosystems. 
+							</p>
+							<div className='pt-8 text-center'>
+								<button
+									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
+									onClick={() => openModal(rmImages)}
+								>
+									Demo
+								</button>
+								<a
+									href='https://apps.oneaquahealth.eu/resmap/v2'
+									target='_blank'
+								>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Application
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
 					<div
 						style={{ backgroundImage: `url(${fe3})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
