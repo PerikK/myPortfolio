@@ -143,14 +143,14 @@ export default function Skills() {
               Future Skills
             </p>
             <p className="py-4 text-xl sm:text-2xl text-center">
-              And here is a list of skills I plan to acquire in the next months.
+              And here is a list of skills I plan to acquire.
             </p>
             <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center py-2">
               {renderFutureSkills(futuresSkills)}
             </div>
           </div>
           <p className="pt-2 text-center">
-            *All logos by{" "}
+            All logos by{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
