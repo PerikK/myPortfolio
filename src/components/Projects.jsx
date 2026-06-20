@@ -1,40 +1,38 @@
-import { useState } from 'react'
-import code from '../assets/code2.jpg'
-import ProjectModal from './ProjectModal'
-import { Link } from 'react-scroll'
-import { HiArrowNarrowRight } from 'react-icons/hi'
-import be1 from '../assets/project_images/cm_be/be1.png'
-import be2 from '../assets/project_images/cm_be/be2.png'
-import fe1 from '../assets/project_images/cm_fe/fe1.png'
-import fe2 from '../assets/project_images/cm_fe/fe2.png'
-import fe3 from '../assets/project_images/cm_fe/fe3.png'
-import fe4 from '../assets/project_images/cm_fe/fe4.png'
-import sl1 from '../assets/project_images/shoping-list/sl1.png'
-import rm1 from '../assets/project_images/OAH/Res_map/rm1.png'
-import rm2 from '../assets/project_images/OAH/Res_map/rm2.png'
-import rm3 from '../assets/project_images/OAH/Res_map/rm3.png'
-import rm4 from '../assets/project_images/OAH/Res_map/rm4.png'
-import rm0 from '../assets/project_images/OAH/Res_map/rm0.png'
-import dr1 from '../assets/project_images/DRE/dr1.png'
+import { useState } from 'react';
+import ProjectModal from './ProjectModal';
+import { Link } from 'react-scroll';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import be1 from '../assets/project_images/cm_be/be1.png';
+import be2 from '../assets/project_images/cm_be/be2.png';
+import fe1 from '../assets/project_images/cm_fe/fe1.png';
+import fe2 from '../assets/project_images/cm_fe/fe2.png';
+import fe3 from '../assets/project_images/cm_fe/fe3.png';
+import fe4 from '../assets/project_images/cm_fe/fe4.png';
+import sl1 from '../assets/project_images/shoping-list/sl1.png';
+import rm1 from '../assets/project_images/OAH/Res_map/rm1.png';
+import rm2 from '../assets/project_images/OAH/Res_map/rm2.png';
+import rm3 from '../assets/project_images/OAH/Res_map/rm3.png';
+import rm4 from '../assets/project_images/OAH/Res_map/rm4.png';
+import rm0 from '../assets/project_images/OAH/Res_map/rm0.png';
+import dr1 from '../assets/project_images/DRE/dr1.png';
 import ws1 from '../assets/project_images/Enora_ws/ws-1.jpg';
 import ws2 from '../assets/project_images/Enora_ws/ws-2.jpg';
-import ws3 from '../assets/project_images/Enora_ws/ws-3.jpg'
-import ws4 from '../assets/project_images/Enora_ws/ws-4.jpg'
-
+import ws3 from '../assets/project_images/Enora_ws/ws-3.jpg';
+import ws4 from '../assets/project_images/Enora_ws/ws-4.jpg';
 
 export default function Projects() {
-	const [isModalOpen, setIsModalOpen] = useState(false)
-	const [selectedImages, setSelectedImages] = useState([])
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [selectedImages, setSelectedImages] = useState([]);
 
-	const beImages = [be1, be2]
-	const feImages = [fe1, fe3, fe2, fe4]
-	const rmImages = [rm0, rm1, rm2, rm3, rm4]
-	const wsImages = [ws1, ws2, ws3, ws4]
+	const beImages = [be1, be2];
+	const feImages = [fe1, fe3, fe2, fe4];
+	const rmImages = [rm0, rm1, rm2, rm3, rm4];
+	const wsImages = [ws1, ws2, ws3, ws4];
 
-	const openModal = (images) => {
-		setSelectedImages(images)
-		setIsModalOpen(true)
-	}
+	const openModal = images => {
+		setSelectedImages(images);
+		setIsModalOpen(true);
+	};
 
 	return (
 		<div
@@ -242,88 +240,6 @@ export default function Projects() {
 									</button>
 								</a>
 								<a href='https://github.com/PerikK/shopping_list.git'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${code})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Coming Soon (My Movies DB)
-							</span>
-							<p className='text-center text-sm pt-2'>
-								A full stack app (Express - React - PostgreSQL) to
-								rate and comment on movies and create your own
-								collection
-							</p>
-							<div className='pt-8 text-center'>
-								<a href='/'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
-									</button>
-								</a>
-								<a href='/'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${code})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Coming Soon (A basket for an online shop)
-							</span>
-							<p className='text-center text-sm pt-2'>
-								A full blown, real world, online market, basket
-							</p>
-							<div className='pt-8 text-center'>
-								<a href='/'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
-									</button>
-								</a>
-								<a href='/'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${code})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Coming Soon (An Artist&#39;s Portfolio)
-							</span>
-							<p className='text-center text-sm pt-2'>
-								A real world full stack app (Express - React -
-								PostgreSQL) where a painter will showcase and sell
-								their art.
-							</p>
-							<div className='pt-8 text-center'>
-								<a href='/'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
-									</button>
-								</a>
-								<a href='/'>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Code
 									</button>
