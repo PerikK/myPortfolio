@@ -16,6 +16,11 @@ import rm3 from '../assets/project_images/OAH/Res_map/rm3.png'
 import rm4 from '../assets/project_images/OAH/Res_map/rm4.png'
 import rm0 from '../assets/project_images/OAH/Res_map/rm0.png'
 import dr1 from '../assets/project_images/DRE/dr1.png'
+import ws1 from '../assets/project_images/Enora_ws/ws-1.jpg';
+import ws2 from '../assets/project_images/Enora_ws/ws-2.jpg';
+import ws3 from '../assets/project_images/Enora_ws/ws-3.jpg'
+import ws4 from '../assets/project_images/Enora_ws/ws-4.jpg'
+
 
 export default function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -24,6 +29,7 @@ export default function Projects() {
 	const beImages = [be1, be2]
 	const feImages = [fe1, fe3, fe2, fe4]
 	const rmImages = [rm0, rm1, rm2, rm3, rm4]
+	const wsImages = [ws1, ws2, ws3, ws4]
 
 	const openModal = (images) => {
 		setSelectedImages(images)
@@ -46,6 +52,36 @@ export default function Projects() {
 				</div>
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 					<div
+						style={{ backgroundImage: `url(${ws1})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+							<span className=' text-lg font-bold text-white tracking-wider'>
+								ENORA INNOVATION - Website
+							</span>
+							<p className='text-center text-sm pt-2 px-2'>
+								The ENORA INNOVATION website is a modern, responsive
+								website built with React and Tailwind CSS. It features
+								a clean design, smooth animations, and a user-friendly
+								interface.
+							</p>
+							<div className='pt-8 text-center'>
+								<button
+									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
+									onClick={() => openModal(wsImages)}
+								>
+									Demo
+								</button>
+								<a href='https://enorainnovation.com' target='_blank'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Application
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div
 						style={{ backgroundImage: `url(${rm1})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
@@ -55,9 +91,10 @@ export default function Projects() {
 								OAH - Resilience Map
 							</span>
 							<p className='text-center text-sm pt-2 px-2'>
-								The OneAquaHealth Resilience Map is an interactive tool 
-								that brings together biodiversity, environmental data, pathogens, weather, 
-								and satellite indicators to assess the health of urban water ecosystems. 
+								The OneAquaHealth Resilience Map is an interactive
+								tool that brings together biodiversity, environmental
+								data, pathogens, weather, and satellite indicators to
+								assess the health of urban water ecosystems.
 							</p>
 							<div className='pt-8 text-center'>
 								<button
@@ -87,9 +124,11 @@ export default function Projects() {
 								Destination Renewable Energy (DRE)
 							</span>
 							<p className='text-center text-xs pt-2 px-2'>
-								Built the fe for the (DRE) Service 
-								Forecast and assess solar and wind energy potential using realtime and historical data. 
-								Get tailored sims, 2-day forecast, and interactive visualization through a secure digital platform.
+								Built the fe for the (DRE) Service Forecast and assess
+								solar and wind energy potential using realtime and
+								historical data. Get tailored sims, 2-day forecast,
+								and interactive visualization through a secure digital
+								platform.
 							</p>
 							<div className='pt-8 text-center'>
 								{/* <button
@@ -106,10 +145,7 @@ export default function Projects() {
 										Demo
 									</button>
 								</a>
-								<a
-									href='https://hyrefapp.destine.eu'
-									target='_blank'
-								>
+								<a href='https://hyrefapp.destine.eu' target='_blank'>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
 										Application
 									</button>
@@ -316,5 +352,5 @@ export default function Projects() {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }
