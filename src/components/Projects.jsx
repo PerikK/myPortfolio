@@ -1,33 +1,13 @@
 import { useState } from 'react';
 import ProjectModal from './ProjectModal';
+import ProjectCard from './ProjectCard';
 import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import be1 from '../assets/project_images/cm_be/be1.png';
-import be2 from '../assets/project_images/cm_be/be2.png';
-import fe1 from '../assets/project_images/cm_fe/fe1.png';
-import fe2 from '../assets/project_images/cm_fe/fe2.png';
-import fe3 from '../assets/project_images/cm_fe/fe3.png';
-import fe4 from '../assets/project_images/cm_fe/fe4.png';
-import sl1 from '../assets/project_images/shoping-list/sl1.png';
-import rm1 from '../assets/project_images/OAH/Res_map/rm1.png';
-import rm2 from '../assets/project_images/OAH/Res_map/rm2.png';
-import rm3 from '../assets/project_images/OAH/Res_map/rm3.png';
-import rm4 from '../assets/project_images/OAH/Res_map/rm4.png';
-import rm0 from '../assets/project_images/OAH/Res_map/rm0.png';
-import dr1 from '../assets/project_images/DRE/dr1.png';
-import ws1 from '../assets/project_images/Enora_ws/ws-1.jpg';
-import ws2 from '../assets/project_images/Enora_ws/ws-2.jpg';
-import ws3 from '../assets/project_images/Enora_ws/ws-3.jpg';
-import ws4 from '../assets/project_images/Enora_ws/ws-4.jpg';
+import projects from '../data/projects';
 
 export default function Projects() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [selectedImages, setSelectedImages] = useState([]);
-
-	const beImages = [be1, be2];
-	const feImages = [fe1, fe3, fe2, fe4];
-	const rmImages = [rm0, rm1, rm2, rm3, rm4];
-	const wsImages = [ws1, ws2, ws3, ws4];
 
 	const openModal = images => {
 		setSelectedImages(images);
@@ -49,204 +29,13 @@ export default function Projects() {
 					</p>
 				</div>
 				<div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-					<div
-						style={{ backgroundImage: `url(${ws1})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								ENORA INNOVATION - Website
-							</span>
-							<p className='text-center text-sm pt-2 px-2'>
-								The ENORA INNOVATION website is a modern, responsive
-								website built with React and Tailwind CSS. It features
-								a clean design, smooth animations, and a user-friendly
-								interface.
-							</p>
-							<div className='pt-8 text-center'>
-								<button
-									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
-									onClick={() => openModal(wsImages)}
-								>
-									Demo
-								</button>
-								<a href='https://enorainnovation.com' target='_blank'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Application
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${rm1})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								OAH - Resilience Map
-							</span>
-							<p className='text-center text-sm pt-2 px-2'>
-								The OneAquaHealth Resilience Map is an interactive
-								tool that brings together biodiversity, environmental
-								data, pathogens, weather, and satellite indicators to
-								assess the health of urban water ecosystems.
-							</p>
-							<div className='pt-8 text-center'>
-								<button
-									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
-									onClick={() => openModal(rmImages)}
-								>
-									Demo
-								</button>
-								<a
-									href='https://apps.oneaquahealth.eu/resmap/v2'
-									target='_blank'
-								>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Application
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${dr1})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider py-2 px-2'>
-								Destination Renewable Energy (DRE)
-							</span>
-							<p className='text-center text-xs pt-2 px-2'>
-								Built the fe for the (DRE) Service Forecast and assess
-								solar and wind energy potential using realtime and
-								historical data. Get tailored sims, 2-day forecast,
-								and interactive visualization through a secure digital
-								platform.
-							</p>
-							<div className='pt-8 text-center'>
-								{/* <button
-									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
-									onClick={() => openModal(rmImages)}
-								>
-									Demo
-								</button> */}
-								<a
-									href='https://youtu.be/RxqCjHpBdpA?si=2afXxJLao1QAXiCs '
-									target='_blank'
-								>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
-									</button>
-								</a>
-								<a href='https://hyrefapp.destine.eu' target='_blank'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Application
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${fe3})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Cohort Manager Front-End
-							</span>
-							<p className='text-center text-sm pt-2'>
-								The front-end of a school management app, that allows
-								students and teachers to communicate, grade and
-								arrange classes. Built with React in an Agile setting
-							</p>
-							<div className='pt-8 text-center'>
-								<button
-									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
-									onClick={() => openModal(feImages)}
-								>
-									Demo
-								</button>
-								<a
-									href='https://github.com/boolean-uk/team-dev-client-c12'
-									target='_blank'
-								>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${be2})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Cohort manager back-end.
-							</span>
-							<p className='text-center text-sm pt-2'>
-								The back-end of a school management app. It allows for
-								authentication account creation and management. Built
-								with Express, Postgress, and Prisma in an Agile
-								setting
-							</p>
-							<div className='pt-8 text-center'>
-								<button
-									className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'
-									onClick={() => openModal(beImages)}
-								>
-									Demo
-								</button>
-								<a
-									href='https://github.com/boolean-uk/team-dev-server-c12'
-									target='_blank'
-								>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div
-						style={{ backgroundImage: `url(${sl1})` }}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-					>
-						{/* Hover Effects */}
-						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
-							<span className=' text-lg font-bold text-white tracking-wider'>
-								Shopping-List
-							</span>
-							<p className='text-center text-sm pt-2'>
-								A nice Shopping List optimized for mobile-phones where
-								it is most likely to be used. Built with React and
-								Tailwindcss.
-							</p>
-							<div className='pt-8 text-center'>
-								<a
-									href='https://btr-shopping-list.netlify.app'
-									target='_blank'
-								>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Demo
-									</button>
-								</a>
-								<a href='https://github.com/PerikK/shopping_list.git'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-										Code
-									</button>
-								</a>
-							</div>
-						</div>
-					</div>
+					{projects.map(project => (
+						<ProjectCard
+							key={project.id}
+							project={project}
+							onOpenModal={openModal}
+						/>
+					))}
 					<ProjectModal
 						isOpen={isModalOpen}
 						onClose={() => setIsModalOpen(false)}
